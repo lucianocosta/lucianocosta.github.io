@@ -1,0 +1,16 @@
+﻿body{
+	background:#000 url('images/bg.jpg') repeat-x fixed center top;
+}
+
+#header{
+	background:url('images/nav_bg.jpg') repeat-x center top;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	height:46px;
+	position:fixed;  /* This property keeps the header attached to top of the window */
+	top:0;
+	left:0;
+	width:100%;
+	z-index:999;
+}
