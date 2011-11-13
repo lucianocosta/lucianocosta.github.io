@@ -1,217 +1,95 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Luciano Costa</title>
-<style type="text/css">
-	@import url('css/style.css');
-	@import url('css/nivo-slider.css');
-</style>
-<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/scroll.js"></script>
-<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
-<script type="text/javascript">
-  $(function() {
-    $('.portfolioImage a.lightbox').lightBox();
-	});
-</script>
-<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
-<!--[if IE]>
-	<style type="text/css">
-        .input { height: 28px; padding: 15px 0 0 10px; }
-	</style>
-<![endif]-->
-<script type="text/javascript">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Luciano Costa</title>
+    <meta name="description" content="I'm a brazilian software developer and what I do best is to create clean coded, well tested and effective web stuff. I'm skilled in both server-side and interface development. I like to code in JavaScript, Ruby, PHP and Java.">
+    <meta name="author" content="Luciano Costa">
+    <meta name="keyworkds" content="Luciano Costa, monttez, monthpicker, @lscosta, ruby, javascript, brazil, porto alegre, lucianocosta, built with bootstrap">
 
-$(document).ready(function(){
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-	$('.slider2').nivoSlider();
-
-  $("#ajax-contact-form").submit(function(){
-    var str = $(this).serialize();
-    $.ajax({
-      type: "POST",
-      url: "./mail/contact.php",
-      data: str,
-      success: function(msg){
-        $("#note").ajaxComplete(function(event, request, settings){
-          if(msg == 'OK'){
-            $(".contactForm").slideUp(1000);
-            result = '<div class="notification"><h4>Your message has been sent!</h4><p>Thank you!</p></div>';
-          }else{
-            result = msg;
-          }
-          $(this).html(result);
-        });
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
       }
-    });
-    return false;
-  });
+    </style>
 
-});
-</script>
+    <!-- Le fav and touch icons -->
+    <!-- <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"> -->
+  </head>
 
-</head>
+  <body>
 
-<body>
-
-<div id="header">
-	<div class="container">
-		<div id="logo">
-    		<h1><a href="index.html" style="color:#EDEDED; text-decoration:none;">Luciano Costa</a></h1>
-   		</div>
-   		<div id="navigation">
-    		<ul>
-        		<li><a href="#home"><strong>Home</strong><span>sweet home</span></a></li>
-            	<li><a href="#work"><strong>Work</strong><span>Services I offer</span></a></li>
-            	<li><a href="#portfolio"><strong>Portfolio</strong><span>some works</span></a></li>
-            	<li><a href="#presence"><strong>Presence</strong><span>where I am</span></a></li>
-            	<li><a href="#contact"><strong>Contact</strong><span>get in touch</span></a></li>
-        	</ul>
-    	</div>
-    </div>
-</div>
-
-<div id="bg">
-
-  <div class="wrapper" id="home">
-    <div class="container">
-      <div class="welcome" style="width:100%; height:600px;">
-	      <h3>Hello!<br />
-        	<span>I'm a software developer and what I do best is to create clean coded, well tested and effective web stuff.</span>
-        </h3>
-	      <div class="divider" style="margin:0px;"></div>
-	      <h5 style="padding-top:15px; padding-bottom:15px;">I'm skilled in both <font style="color:black">server-side</font> and user-friendly <font style="color:black">interface</font> development. What I cannot do with <font style="color:black">Javascript</font>, I like to do in <font style="color:black">Ruby</font>, PHP or Java.</h5>
-	      <div class="divider"></div>
-        <div style="padding-top:30px; text-align:center;">
-        <a href="#work"><img src="images/services_work-trans.png"/></a>
-        <a href="#contact" style="margin-left:100px;"><img src="images/services_contact-trans.png" /></a>
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <img src="http://a3.twimg.com/profile_images/1340054803/luciano_transparent_normal.PNG" height="30" style="float:left; margin-right:10px;">
+          <a class="brand" href="#"> Luciano Costa</a>
+          <ul class="nav">
+            <li><a target="_blank" href="http://blog.lucianocosta.info">blog</a></li>
+            <li><a target="_blank" href="http://twitter.com/lscosta">twitter</a></li>
+            <li><a target="_blank" href="http://github.com/lucianocosta">github</a></li>
+            <li><a target="_blank" href="http://slideshare.com/lucianocosta">slideshare</a></li>
+            <li><a target="_blank" href="http://linkedin.com/in/lucianocosta">linkedin</a></li>
+            <li><a target="_blank" href="http://facebook.com/lucianocosta">facebook</a></li>
+            <li><a href="skype:monttez">skype</a></li>
+            <li><a href="mailto:lucianocosta@lucianocosta.info">email</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="wrapper" id="work">
     <div class="container">
-      <h3>WORK<br /><span>SERVICES I OFFER</span></h3>
-      <div class="divider"></div>
-      <h3>I'm a software-related problem <span><a href="http://www.solversmanifesto.com/" target="_blank">SOLVER</a></span> and I can help you to improve your business through anything related to software development, maintenance and distribution.</h3>
-      <h2>I can also help your team to achieve the goodies of Lean Software Development, Scrum, eXtreme Programming and Getting Real practices.</h2>
-    </div>
-  </div>
 
-  <div class="wrapper" id="portfolio">
-    <div class="container">
-      <h3>PORTFOLIO<br />
-      <span>WORK I'VE DONE</span></h3>
-      <div class="divider"></div>
-
-      <h3>I'm the guy behind the architecture of <span><a href="http://umov.me" target="_blank">uMov.me</a>'s <a href="http://center.umov.me" target="_blank">backend</a>.</span></h3>
-      <h2 style="clear:both">It's a web platform to build corporate apps to run on mobile devices. It's a Java project made around technologies such as vRaptor3, Sitemesh, jQuery, Varnish, Memcached and others.</h2>
-
-      <div class="divider" style="margin-top:20px;"></div>
-
-      <h3>I'm helping to improve <span><a href="http://mecasei.com" target="_blank">mecasei.com</a></span></h3>
-      <h2 style="clear:both">It's a site for weeding's planning, management and register. It's a Ruby project that runs on Sinatra framework.</h2>
-
-      <div class="divider" style="margin-top:20px;"></div>
-
-      <h2>In the last years, I've been working with companies like <span><a href="http://www.suryatec.com.br" target="_blank">Surya</a>, <a href="http://www.thyssenkruppelevadores.com.br" target="_blank">ThyssenKrupp</a>, <a href="http://www.cwi.com.br" target="_blank">CWI Software</a> and <a href="http://www.caixars.com.br" target="_blank">CaixaRS</a></span>.</h2>
-
-      <div class="divider" style="margin-top:20px;"></div>
-
-      <h2>You may also find something on my <span><a href="http://github.com/lucianocosta" target="_blank">github</a> or <a href="http://linkedin.com/in/lucianocosta" target="_blank">linkedin</a></span>.</h2>
-
-    </div>
-  </div>
-
-	<div class="wrapper" id="presence" style="height:600px;">
-    	<div class="container">
-      	<h3>PRESENCE<br /><span>FIND ME AT WEB</span></h3>
-        <div class="divider"></div>
-      	<h3>I run
-          <span><a href="http://monttez.com" target="_blank">monttez.com</a></span>
-          <span> and </span>
-          <span><a href="http://monttez.com" target="_blank">wertice.com</a></span>
-        </h3>
-        <div class="divider"></div>
-      	<h3>I write at <span><a href="http://twitter.com/lscosta" target="_blank">twitter.com/lscosta</a></span></h3>
-        <div class="divider"></div>
-      	<h3>I also write at <span><a href="http://blog.lucianocosta.info" target="_blank">blog.lucianocosta.info</a></span></h3>
-        <div class="divider"></div>
-      	<h3>My resume is at <span><a href="http://linkedin.com/in/lucianocosta" target="_blank">linkedin.com/in/lucianocosta</a></span></h3>
-        <div class="divider"></div>
-      	<h3>I'm daily working on <span><a href="http://center.umov.me" target="_blank">backend</a> of <a href="http://umov.me" target="_blank">uMov.me</a></span></h3>
-        <div class="divider"></div>
+      <div class="hero-unit">
+        <h1>Hello!</h1>
+        <h2 style="color:#9C0000">I'm a brazilian software developer and what I do best is to create clean coded, well tested and effective web stuff.</h2>
+        <h5>I'm skilled in both server-side and interface development. 
+          I like to code in JavaScript, Ruby, PHP and Java. In that order.</h5>
       </div>
-  </div>
 
-	<div class="wrapper" id="contact">
-   	<div class="container">
-      <h3>CONTACT ME<br /><span>GET IN TOUCH</span></h3>
-      <div class="divider"></div>
-        <div id="contactWrap">
-          <div id="note"></div>
-            <div class="contactForm">
-              <!-- TODO: make this form perform a ajax call to google form (zero width/height iframe)
-              <form id="ajax-contact-form" action="javascript:alert('success!');">
-                <label>Your name: <span class="ast">*</span></label><br />
-                <input class="input" type="text" name="name" value="" /><br />
-                <label>Your email: <span class="ast">*</span></label><br />
-                <input class="input" type="text" name="email" value="" /><br />
-                <label>Subject:</label><br />
-                <input class="input" type="text" name="subject" value="" /><br />
-                <label>Your message: <span class="ast">*</span></label><br />
-                <textarea name="message" rows="3" cols="35"></textarea><br />
-                <label>&nbsp;</label><input class="submit" type="submit" name="submit" value="Send Message" />
-              </form>
-              -->
-              <iframe src="http://spreadsheets.google.com/embeddedform?formkey=dDZuNkVhWWtMSzBIZXgwdktqUUxIeVE6MQ" width="580" height="580" frameborder="0" marginheight="0" scrolling="no" marginwidth="0">Loading...</iframe>
-            </div>
-          </div>
-
-          <div class="contactInfo">
-            <h4>Connect With Me</h4>
-            <p>I'm also at some of the top social networks!</p>
-            <ul class="social">
-              <li><a href="http://facebook.com/lucianocosta" target="_blank"><img src="images/facebook.gif" alt="Facebook" /></a></li>
-              <li><a href="http://twitter.com/lscosta" target="_blank"><img src="images/twitter.gif" alt="Twitter" target="_blank" /></a></li>
-              <li><a href="http://linkedin.com/in/lucianocosta" target="_blank"><img src="images/linkedin.gif" alt="LinkedIn" /></a></li>
-            </ul>
-            <br />
-            <h4>Other Contact Info</h4>
-            <p>+55 51 9282-0422<br />lucianocosta@lucianocosta.info</p>
-            <h4>Hire Me</h4>
-            <p>Need some work done? Use the form on the left to inquire about having me to build you a professional, custom, great looking website or web app.</p>
-<!--
-            <p><a href="#">Download Resume</a></p>
--->
-          </div>
+      <div class="row">
+        <div class="span-one-third">
+          <h2>OpenSource</h2>
+          <p>Check out my <a href="http://lucianocosta.info/jquery.mtz.monthpicker/" target="_blank">Monthpicker</a>, the missing jQuery widget.</p>
         </div>
+        <div class="span-one-third">
+          <h2>Bizz</h2>
+           <p>I'm running <a href="http://www.monttez.com" target="_blank">monttez.com</a>, a pretty cool place for pretty cool things. You should contract us <a href="mailto:contact@monttez.com">here</a>.</p>
+       </div>
+        <div class="span-one-third">
+          <h2>Testimonials</h2>
+          <p><blockquote>I don't always need a developer. But when I do, I call Luciano.<small>Chuck Norris</small></blockquote></p>
+        </div>
+      </div>
 
-     </div>
+      <footer>
+        <!-- <p>&copy; Company 2011</p> -->
+        <p style="text-align:center; color:gray">
+          I'm really glad you've spent some time here! Thank you! Be sure to <a href="mailto:lucianocosta@lucianocosta.info">email</a> or <a href="skype:monttez">skype</a> me if you think I can help you. It would be great!
+        </p>
+      </footer>
 
-  <div class="wrapper" id="footer" style="height:100px;">
-    <div class="container">
-      <p>Copyleft 2011 &copy; <a href="#">Luciano Costa</a> - Some Rights Reserved. <!-- <a href="#">Valid XHTML</a> / <a href="#">Valid CSS</a> --> </p>
-      <p>This site is running directly from <a href="http://github.com/lucianocosta/lucianocosta.github.com" target="_blank">my github account</a>.</p>
     </div>
-  </div>
 
-</div>
-
-<script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-  try{
-    var pageTracker = _gat._getTracker("UA-20199846-1");
-    pageTracker._trackPageview();
-  }catch(err){
-  }
-</script>
-</body>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try{
+        var pageTracker = _gat._getTracker("UA-20199846-1");
+        pageTracker._trackPageview();
+      }catch(err){
+      }
+    </script>
+    </body>
 </html>
-
