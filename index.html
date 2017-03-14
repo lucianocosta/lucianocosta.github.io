@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0044)http://getbootstrap.com/examples/jumbotron/# -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-    https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+    <meta name="description" content="Luciano Costa, Software Developer; Meeka; MeekaLabs; mecasei;">
+    <meta name="author" content="Luciano Costa">
 
     <title>Luciano Costa - Push that button!</title>
 
@@ -20,6 +17,7 @@
 
     <!-- Custom styles for this template -->
     <link href="./index_files/jumbotron.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -37,13 +35,44 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>-->
+          </button>
           <a class="navbar-brand" href="http://lucianocosta.com.br">LucianoCosta<font style="font-size:0.6em; color:gray;">.com.br</font></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <div class="navbar-text navbar-right">
+            <ul class="siteHeader-social">
+              <li>
+                <a class="navbar-link" href="mailto:luciano@meekalabs.com">
+                  <i class="fa fa-envelope-o"></i>
+                </a>
+              </li>
+              <li>
+                <a class="navbar-link" href="https://www.facebook.com/lucianocosta">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a class="navbar-link" href="https://twitter.com/lscosta">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="navbar-link" href="http://br.linkedin.com/in/lucianocosta">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a class="navbar-link" href="https://github.com/lucianocosta">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -56,10 +85,6 @@
       <div class="container">
          <p>I work daily to solve other people's and business' problems with only a handful of <strong>good ideas</strong> and <strong>well crafted software</strong>!</p>
       </div>
-    </div>
-
-    <div class="container" style="text-align:center; padding: 10px;">
-      <div id="google_translate_element"></div>
     </div>
 
     <div class="container">
@@ -81,7 +106,7 @@
           </div>
 <!--           <h2>Meeka</h2> -->
           <p>You've may heard about Meeka, she's the bride and groom's best friend.
-           She was the first AI capable brazilian bot, being one of the first commercial cases of success of IBM Watson adoption. 
+           She was the first AI capable brazilian bot, being one of the first commercial cases of success of IBM Watson adoption.
            Also, the first brazilian chatbot on Facebook Messenger, one week after its release at F8.
            I've lead it's development from the scracth and I'm very proud of what we made! o/</p>
           <p><a class="btn btn-default" href="http://meeka.cc" target="_blank" role="button">View site »</a></p>
@@ -92,10 +117,10 @@
           </div>
 <!--           <h2>Mecasei.com</h2> -->
           <p>A game changing place to work! I've always wanted to work with my friends Daniel Tamiosso and Marcio Acorci
-          because of our combined talent and harmony, and we made it like a boss when the oportunity came out. 
+          because of our combined talent and harmony, and we made it like a boss when the oportunity came out.
           Meeka, as well as a lot of other things, is result from a freedom-to-create environment that you'll rarely see out there as it happens on Mecasei.
           Cheers, buddies! :*
-          
+
           </p>
           <p><a class="btn btn-default" href="http://mecasei.com" target="_blank" role="button">View site »</a></p>
         </div>
@@ -109,34 +134,43 @@
       <hr>
 
       <footer>
-        <ul class="siteHeader-social">
-          <li>
-            <a href="mailto:luciano@meekalabs.com">
-              <i class="fa fa-envelope-o"></i>
-            </a>
-          </li>                   
-          <li>
-            <a href="https://www.facebook.com/lucianocosta">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/lscosta">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://br.linkedin.com/in/lucianocosta">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/lucianocosta">
-              <i class="fa fa-github"></i>
-            </a>
-          </li>
-        </ul>
-        <p>© 2017 Luciano Costa - Push that button!</p>
+        <div class="row">
+          <div class="col-md-4">
+            <p>© 2017 Luciano Costa - Push that button!</p>
+          </div>
+          <div class="col-md-4" style="text-align:center">
+            <div id="google_translate_element"></div>
+          </div>
+          <div class="col-md-4">
+            <ul class="siteHeader-social pull-right">
+              <li>
+                <a href="mailto:luciano@meekalabs.com">
+                  <i class="fa fa-envelope-o"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/lucianocosta">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/lscosta">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://br.linkedin.com/in/lucianocosta">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/lucianocosta">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div> <!-- /container -->
 

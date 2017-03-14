@@ -1,16 +1,24 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
+
 body {
-/*   padding-top: 50px; */
-  padding-bottom: 20px;
+    /*   padding-top: 50px; */
+    padding-bottom: 20px;
 }
-
 .luciano-bg {
-  background: url(lucianocosta-meekalabs-meeka-mecasei.png) no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height:700px;
+    background: url(lucianocosta-meekalabs-meeka-mecasei.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 700px;
 }
-
-.siteHeader-social{list-style:none;margin:0 auto 1rem;max-width:600px;padding:0}.siteHeader-social>li{display:inline;margin:0 .5rem}
+.siteHeader-social {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0
+}
+.siteHeader-social>li {
+    display: inline;
+    margin: 0 .5rem;
+}
